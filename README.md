@@ -9,11 +9,11 @@
 
 ## What is expected?
 
-The warn should display correctly after the return value of the event without refresh.
+The warn should output correctly after the return value of the event changed without refresh.
 
 ## What is actually happening?
 
-The warn always displays when the default return is false. It will not disappear after the return value has been changed to true without refresh.
+The warn always outputs after the return value changed from `false` to `true`. It will be correct after refreshing.
 
 Also, the `defineProps` has the same issue.
 
